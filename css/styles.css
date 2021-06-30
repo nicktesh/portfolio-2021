@@ -19,6 +19,7 @@ html {
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  position: relative;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -731,6 +732,25 @@ p {
   text-align: center;
   position: relative;
   z-index: 5;
+}
+
+/* Rocket Back To Top */
+
+.rocket-to-top {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 1000px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 50;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Float Animation */
