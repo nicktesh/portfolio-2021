@@ -239,6 +239,7 @@ p {
 
 .element-float {
   transform: translatey(0px);
+  -webkit-transform: translateZ(0);
   animation: float 100s ease-in-out infinite;
   animation-iteration-count: 1;
 }
