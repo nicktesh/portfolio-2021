@@ -238,10 +238,6 @@ p {
 } */
 
 .element-float {
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
   animation: float 100s ease-in-out infinite;
   animation-iteration-count: 1;
 }
