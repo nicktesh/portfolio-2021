@@ -246,6 +246,15 @@ p {
   -webkit-animation-fill-mode: forwards;
 }
 
+a * .element-float {
+  transform: translatey(0px);
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 100s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
 /* About Section */
 #about {
   padding: 100px 0 20px 0;
