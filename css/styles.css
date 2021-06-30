@@ -238,6 +238,8 @@ p {
 } */
 
 .element-float {
+  transform: translatey(0px);
+  -webkit-backface-visibility: hidden;
   animation: float 100s ease-in-out infinite;
   animation-iteration-count: 1;
 }
