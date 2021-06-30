@@ -239,9 +239,11 @@ p {
 
 .element-float {
   transform: translatey(0px);
-  -webkit-backface-visibility: hidden;
-  animation: float 100s ease-in-out infinite;
-  animation-iteration-count: 1;
+  -webkit-animation-name: float;
+  -webkit-animation-duration: 100s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
 }
 
 /* About Section */
@@ -727,10 +729,10 @@ p {
 /* Float Animation */
 @keyframes float {
   0% {
-    transform: translatey(0px) rotate(0deg);
+    -webkit-transform: translatey(0px) rotate(0deg);
   }
   100% {
-    transform: translatey(-10000px) rotate(-50deg);
+    -webkit-transform: translatey(-10000px) rotate(-50deg);
   }
 }
 
