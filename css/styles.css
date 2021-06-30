@@ -239,7 +239,8 @@ p {
 
 .element-float {
   transform: translatey(0px);
-  animation: float 80s ease-in-out infinite;
+  animation: float 100s ease-in-out infinite;
+  animation-iteration-count: 1;
 }
 
 /* About Section */
