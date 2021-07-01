@@ -126,6 +126,16 @@ p {
   }
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  transition: ease 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  text-shadow: 2px 8px 6px rgb(0 0 0 / 70%),
+    0px -2px 15px rgb(255 255 255 / 80%);
+}
+
 /* Header Section */
 #header {
   text-align: center;
@@ -531,7 +541,7 @@ p {
 
 /* Portfolio Section */
 #portfolio {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -568,6 +578,7 @@ p {
   margin: 3px;
   font-size: 0.8em;
   line-height: 2.5em;
+  transition: ease 0.3s;
 }
 
 #portfolio .portfolio-item {
@@ -587,15 +598,32 @@ p {
   box-shadow: inset 5px 5px 40px rgba(0, 0, 0, 0.8);
 }
 
+#portfolio .portfolio-item:hover h3 {
+  text-shadow: 2px 8px 6px rgb(0 0 0 / 70%),
+    0px -2px 15px rgb(255 255 255 / 80%);
+}
+
+#portfolio .portfolio-item:hover p {
+  text-shadow: 2px 8px 6px rgb(0 0 0 / 70%),
+    0px -2px 15px rgb(255 255 255 / 80%);
+}
+
+#portfolio .portfolio-item:hover .type {
+  text-shadow: 2px 8px 6px rgb(0 0 0 / 70%),
+    0px -2px 15px rgb(255 255 255 / 80%);
+}
+
 #portfolio .portfolio-content h3 {
   text-transform: uppercase;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.4),
     0px -5px 35px rgba(255, 255, 255, 0.5);
+  transition: ease 0.3s;
 }
 
 #portfolio .portfolio-content p {
   padding-bottom: 10px;
   color: #ffffff;
+  transition: ease 0.3s;
 }
 
 /* Backgrounds for Portfolio Items */
@@ -723,6 +751,48 @@ p {
 /* Contact Section */
 #contact {
   padding: 100px 0;
+  background-color: #081e35;
+  position: relative;
+  z-index: 5;
+}
+
+#contact .social-links ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+#contact .social-links ul i {
+  font-size: 1.5em;
+  padding-right: 10px;
+  color: #04befe;
+}
+
+#contact .social-links ul a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 3em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  transition: ease 0.3s;
+}
+
+#contact .social-links ul a:hover {
+  text-shadow: 2px 8px 6px rgb(0 0 0 / 70%),
+    0px -2px 15px rgb(255 255 255 / 80%);
+}
+
+@media screen and (max-width: 992px) {
+  #contact .main-title.left {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #contact .social-links {
+    justify-content: center;
+    display: flex;
+  }
 }
 
 /* Footer Section */
@@ -736,21 +806,12 @@ p {
 
 /* Rocket Back To Top */
 
-.rocket-to-top {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  border-radius: 1000px;
+.back-to-top {
   position: fixed;
-  right: 25px;
   bottom: 25px;
+  right: 25px;
+  display: none;
   z-index: 50;
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Float Animation */
