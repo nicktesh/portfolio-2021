@@ -1,28 +1,25 @@
 // SMOOTH SCROLLING
 $(document).ready(function () {
-  // Add smooth scrolling to all links
+  // add smooth scrolling to all links
   $("a").on("click", function (event) {
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+      // store hash
+      let hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      // animation for scroll
       $("html, body").animate(
         {
           scrollTop: $(hash).offset().top,
         },
         800,
         function () {
-          // Add hash (#) to URL when done scrolling (default click behavior)
+          // add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
       );
-    } // End if
+    }
   });
 });
 // END OF SMOOTH SCROLLING
@@ -30,10 +27,12 @@ $(document).ready(function () {
 // SCROLL TO TOP
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
+    if ($(this).scrollTop() > 100) {
       $("#back-to-top").fadeIn();
     } else {
       $("#back-to-top").fadeOut();
+      $("#rocketStable").attr("src", "assets/img/rocket-stable.svg");
+      $("#back-to-top").css({ position: "fixed", bottom: 25, right: 25 });
     }
   });
   // scroll body to 0px on click
@@ -43,6 +42,19 @@ $(document).ready(function () {
         scrollTop: 0,
       },
       400
+    );
+    // change rocket to launch pic, do quick animation
+    $("#rocketStable").attr("src", "assets/img/rocket-launch.svg");
+    $("#back-to-top").animate(
+      {
+        position: "fixed",
+        bottom: 1000,
+        right: 25,
+      },
+      800,
+      function () {
+        // animation complete
+      }
     );
     return false;
   });

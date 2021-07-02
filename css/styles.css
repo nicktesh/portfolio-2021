@@ -96,6 +96,27 @@ h6 {
   z-index: 5;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 22px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #020c16;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #04befe;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  min-height: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9bcff7;
+}
+
 /* General Styles */
 .pos-rel {
   position: relative;
@@ -812,6 +833,12 @@ p {
   right: 25px;
   display: none;
   z-index: 50;
+  padding: 20px;
+}
+
+.rocket-stable img {
+  width: 100%;
+  max-width: 40px;
 }
 
 /* Float Animation */
