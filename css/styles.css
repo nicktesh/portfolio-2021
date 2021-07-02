@@ -829,8 +829,8 @@ p {
 
 .back-to-top {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 10px;
+  right: 10px;
   display: none;
   z-index: 50;
   padding: 20px;
@@ -838,7 +838,13 @@ p {
 
 .rocket-stable img {
   width: 100%;
-  max-width: 40px;
+  max-width: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .rocket-stable img {
+    max-width: 25px;
+  }
 }
 
 /* Float Animation */

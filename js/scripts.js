@@ -32,7 +32,7 @@ $(document).ready(function () {
     } else {
       $("#back-to-top").fadeOut();
       $("#rocketStable").attr("src", "assets/img/rocket-stable.svg");
-      $("#back-to-top").css({ position: "fixed", bottom: 25, right: 25 });
+      $("#back-to-top").css({ position: "fixed", bottom: 10, right: 10 });
     }
   });
   // scroll body to 0px on click
@@ -49,7 +49,6 @@ $(document).ready(function () {
       {
         position: "fixed",
         bottom: 1000,
-        right: 25,
       },
       800,
       function () {
