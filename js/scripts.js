@@ -60,18 +60,35 @@ $(document).ready(function () {
 });
 // END OF SCROLL TO TOP
 
-// GRAVITY SWITCH
+// GRAVITY SWITCH AND MESSAGE
 let gravitySwitch = document.getElementById("gravitySwitch");
+let gravityBox = document.getElementById("gravityBox");
+let gravityMsg = document.getElementById("gravityMsg");
 
 gravitySwitch.addEventListener("click", function () {
   if (gravitySwitch.checked) {
     document.querySelectorAll(".element").forEach((item) => {
       item.classList.add("element-float");
+      gravityBox.classList.add("activeGravity");
+      gravityMsg.innerHTML = "Gravity has been turned off";
+      document.body.classList.add("overflowHidden");
+      setTimeout(function () {
+        gravityBox.classList.remove("activeGravity");
+        document.body.classList.remove("overflowHidden");
+      }, 2000);
     });
   } else {
     document.querySelectorAll(".element").forEach((item) => {
       item.classList.remove("element-float");
+      gravityBox.classList.add("activeGravity");
+      gravityMsg.innerHTML = "Gravity has been turned back on";
+      document.body.classList.add("overflowHidden");
+      setTimeout(function () {
+        gravityBox.classList.remove("activeGravity");
+        document.body.classList.remove("overflowHidden");
+      }, 2000);
     });
   }
 });
-// END OF GRAVITY SWITCH
+
+// END OF GRAVITY SWITCH AND MESSAGE
