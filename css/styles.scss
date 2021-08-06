@@ -1,14 +1,27 @@
 @charset "UTF-8";
 
+//
+// SASS Main Styles //
+//
+
 $primary-font: "Raleway", sans-serif;
 $dark-bg: #061727;
+$light-bg: #dbe4eb;
 $alt-color: #62a0d1;
 $white: #ffffff;
 $black: #000000;
+$darkgrey: #2c333b;
+$lightgrey: #7e858a;
 $text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.7),
   0px -2px 15px rgba(255, 255, 255, 0.8);
 $text-shadow-alt: 2px 8px 6px rgba(0, 0, 0, 0.4),
   0px -5px 35px rgba(255, 255, 255, 0.5);
+$text-shadow-light: 2px 8px 6px rgba(0, 0, 0, 0.1),
+  0px -5px 35px rgba(255, 255, 255, 0.5);
+
+//
+// End of SASS Main Styles //
+//
 
 *,
 *::before,
@@ -63,14 +76,26 @@ h6 {
   font-weight: 800;
 }
 
-/* Buttons */
+a {
+  text-decoration: none;
+}
+
+p {
+  @media screen and (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+//
+// Buttons //
+//
+
 .btn-primary {
   width: 200px;
   font-size: 16px;
   font-weight: 600;
   color: $white;
   cursor: pointer;
-  margin: 20px;
   height: 55px;
   text-align: center;
   border: none;
@@ -80,6 +105,11 @@ h6 {
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: 992px) {
+    width: 180px;
+    font-size: 14px;
+  }
 
   &:hover {
     background-position: 100% 0;
@@ -107,7 +137,45 @@ h6 {
   z-index: 5;
 }
 
-/* Custom Scrollbar */
+.btn-outline {
+  background: transparent;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $alt-color;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: solid 2px $alt-color;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: 992px) {
+    width: 180px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+//
+// End of Buttons //
+//
+
+//
+// Custom Scrollbar //
+//
+
 ::-webkit-scrollbar {
   width: 22px;
 }
@@ -128,7 +196,14 @@ h6 {
   background-color: #9bcff7;
 }
 
-/* General Styles */
+//
+// End of Custom Scrollbar //
+//
+
+//
+// General Styles //
+//
+
 .pos-rel {
   position: relative;
 }
@@ -154,7 +229,14 @@ p {
   -webkit-animation-fill-mode: forwards;
 }
 
-/* Nav Bar */
+//
+// End of General Styles //
+//
+
+//
+// Nav Bar //
+//
+
 .navbar {
   padding: 0 20px;
 }
@@ -176,7 +258,14 @@ p {
   }
 }
 
-/* Main Titles */
+//
+// End of Nav Bar //
+//
+
+//
+// Main Titles //
+//
+
 .main-title {
   color: $white;
   position: relative;
@@ -227,7 +316,28 @@ p {
   }
 }
 
-/* Sub Titles */
+.main-title-alt {
+  color: $darkgrey;
+  position: relative;
+  z-index: 5;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  text-shadow: $text-shadow-light;
+
+  @media screen and (max-width: 992px) {
+    text-align: center;
+    font-size: 2.5em;
+  }
+}
+
+//
+// End of Main Titles //
+//
+
+//
+// Sub Titles //
+//
+
 .sub-title {
   color: $alt-color;
   font-size: 1.5em;
@@ -256,7 +366,14 @@ p {
   }
 }
 
-/* Header Section */
+//
+// End of Sub Titles //
+//
+
+//
+// Header Section //
+//
+
 #header {
   text-align: center;
   padding: 20px 0;
@@ -293,7 +410,7 @@ p {
     }
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
 
@@ -374,7 +491,73 @@ p {
   }
 }
 
-/* About Section */
+//
+// End of Header Section //
+//
+
+//
+// Gravity Message Popup //
+//
+
+#gravityBox {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 3em;
+    text-align: center;
+    line-height: 1em;
+    margin: 0;
+
+    @media screen and (max-width: 992px) {
+      font-size: 2.3em;
+    }
+  }
+}
+
+.activeGravity {
+  display: flex !important;
+  animation: fadeIn 2000ms linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+//
+// End of Gravity Message Popup //
+//
+
+//
+// About Section //
+//
+
 #about {
   padding: 100px 0 20px 0;
   background-color: $dark-bg;
@@ -480,7 +663,13 @@ p {
   }
 }
 
-/* Skillset Section */
+//
+// End of About Section //
+//
+
+//
+// Skillset Section //
+//
 
 #skillset {
   padding: 100px 0;
@@ -536,7 +725,14 @@ p {
   }
 }
 
-/* Portfolio Section */
+//
+// End of Skillset Section //
+//
+
+//
+// Portfolio Section //
+//
+
 #portfolio {
   padding: 100px 0 0 0;
 
@@ -739,7 +935,14 @@ p {
   }
 }
 
-/* Contact Section */
+//
+// End of Portfolio Section //
+//
+
+//
+// Contact Section //
+//
+
 #contact {
   padding: 100px 0;
   background-color: #081e35;
@@ -784,7 +987,14 @@ p {
   }
 }
 
-/* Footer Section */
+//
+// End of Contact Section //
+//
+
+//
+// Footer Section //
+//
+
 #footer {
   background-color: #020c16;
   padding: 20px 0;
@@ -793,7 +1003,13 @@ p {
   z-index: 5;
 }
 
-/* Rocket Back To Top */
+//
+// End of Footer Section //
+//
+
+//
+// Back to Top Rocket //
+//
 
 .back-to-top {
   position: fixed;
@@ -815,7 +1031,14 @@ p {
   }
 }
 
-/* Float Animation */
+//
+// End of Back to Top Rocket //
+//
+
+//
+// Float Animation //
+//
+
 @-webkit-keyframes float {
   0% {
     -webkit-transform: translatey(0px) rotate(0deg);
@@ -833,7 +1056,14 @@ p {
   }
 }
 
-/* The main Star Animation */
+//
+// End of Float Animation //
+//
+
+//
+// Stars Animation //
+//
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
@@ -1432,50 +1662,138 @@ p {
 }
 
 //
-// Gravity Message Popup //
+// End of Stars Animation //
 //
 
-#gravityBox {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.9);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  justify-content: center;
-  align-items: center;
+//
+// Innerpage Header Section //
+//
+
+#innerpage-header {
+  text-align: center;
+  padding: 20px 0;
+  background: $dark-bg;
+  background: linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0) 0,
+      rgba(6, 23, 39, 0.3) 30%,
+      rgba(6, 23, 39, 1) 100%
+    ),
+    url("../assets/img/header-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .nav-logo {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .header-content {
+    padding: 150px 0;
+    height: 500px;
+    position: relative;
+    z-index: 4;
+
+    @media screen and (max-width: 768px) {
+      padding: 100px 0;
+      height: 300px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 1000px;
+      position: absolute;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 50px;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      bottom: -150px;
+
+      @media screen and (max-width: 768px) {
+        bottom: -100px;
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' focusable='false' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 448 405' style='enable-background:new 0 0 448 405;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Cg%3E%3Cg%3E%3Cpath class='st0' d='M417,405H31c-16.4,0-30-12.8-31-29.3c-0.9-16.4,11.2-30.7,27.5-32.5c21.3-2.4,75.3-13.1,116.6-60.9 c34.5-40,41.8-84.5,43.1-107.5c0.9-17.1,15.6-30.2,32.7-29.3s30.2,15.6,29.3,32.7c-1.7,30.9-11.5,90.7-58.1,144.6 c-6.4,7.4-12.9,14.1-19.6,20.2H417c17.1,0,31,13.9,31,31C448,391.1,434.1,405,417,405z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st0' d='M31,267.2h92c0.5-0.6,1.1-1.2,1.6-1.8c17.5-20.2,26.8-41.9,31.7-60.2H31c-17.1,0-31,13.9-31,31 C0,253.3,13.9,267.2,31,267.2z'/%3E%3Cpath class='st0' d='M255.1,267.2H417c17.1,0,31-13.9,31-31s-13.9-31-31-31H272.3C269.6,223,264.5,244.4,255.1,267.2z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='st0' d='M141.5,112.5v-11.9c0-14.1,7.5-26.5,18.7-33.3H31c-17.1,0-31,13.9-31,31s13.9,31,31,31h110.5V112.5z'/%3E%3Cpath class='st0' d='M417,67.3H287.7c11.2,6.9,18.7,19.2,18.7,33.3v11.9v16.8H417c17.1,0,31-13.9,31-31S434.1,67.3,417,67.3z'/%3E%3C/g%3E%3Cpath class='st0' d='M226.7,0.6c-1.2-0.8-3.1-0.8-4.3,0c-6.9,4.4-11.3,8.8-15.8,13.1c-18.2,18-19.5,38.5-15,59.4l-18.4,18.1 c-2.9,2.8-4.2,8.3-3,12.1l8.5,26.1c0.3,0.9,0.8,1.7,1.4,2.3c2.3,2.3,6.1,2.4,8.4,0.1l18.3-18.1l-0.1,7.9c0,4,3.3,8,7.9,8l17.8,0.1 c3.9,0,8-3.3,8-7.9l0.1-7.9l18.1,18.3c2.3,2.3,6.1,2.4,8.4,0.1c0.6-0.7,1.1-1.5,1.5-2.3l8.8-25.9c1.3-3.8,0.1-9.3-2.8-12.2 l-18.2-18.4c4.8-20.8,3.7-41.4-14.1-59.6C237.9,9.5,233.5,5.1,226.7,0.6z M231.2,48c-3.9,3.8-10.2,3.8-14-0.1s-3.8-10.2,0.1-14 c3.9-3.8,10.2-3.8,14,0.1C235.2,37.8,235.1,44.1,231.2,48z'/%3E%3C/g%3E%3C/svg%3E%0A");
+
+    .navbar-toggler {
+      border: none;
+    }
+  }
+
+  .navbar-dark .navbar-toggler {
+    color: $alt-color;
+    border-color: transparent;
+  }
+}
+
+#innerpage-content {
+  background-color: $light-bg;
+  color: $lightgrey;
+  padding: 200px 0;
+  text-align: center;
 
   h3 {
-    font-size: 3em;
-    text-align: center;
-    line-height: 1em;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .buttons-row {
+      display: flex;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      button:nth-child(1) {
+        margin-right: 20px;
+
+        @media screen and (max-width: 768px) {
+          margin-right: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .tech-list {
+    margin-top: 60px;
+
+    p {
+      font-weight: 800;
+      font-size: 1.2em;
+      color: $darkgrey;
+
+      @media screen and (max-width: 992px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .project-desc {
+    color: $lightgrey;
+    margin-top: 20px;
   }
 }
 
-.activeGravity {
-  display: flex !important;
-  animation: fadeIn 2000ms linear;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.overflowHidden {
-  overflow: hidden;
-}
+//
+// End of Innerpage Header Section //
+//
