@@ -13,7 +13,7 @@ $(document).ready(function () {
         {
           scrollTop: $(hash).offset().top,
         },
-        800,
+        300,
         function () {
           // add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;

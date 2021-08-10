@@ -10,11 +10,11 @@
     />
     <meta
       name="description"
-      content="Front-End Web Developer and UI Designer"
+      content="Front-End Web Developer and Digital Designer"
     />
     <meta
       name="keywords"
-      content="front-end web developer, ui designer, portfolio"
+      content="front-end web developer, digital designer, portfolio"
     />
     <meta name="author" content="Nick Tesh" />
 
@@ -25,11 +25,27 @@
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
-
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Nick Tesh - Product Feedback Project</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +67,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../../css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -81,8 +96,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a href="javascript:history.back()"
-                  ><button class="btn-primary dark-blue">FULL PORTFOLIO</button>
+                <a href="../">
+                  <button class="btn-primary dark-blue">FULL PORTFOLIO</button>
                 </a>
               </div>
             </div>
@@ -93,7 +108,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <img
-                  src="../../assets/img/laptop-example.png"
+                  src="img/desktop-view.png"
                   alt="Product Feedback Project"
                 />
               </div>
@@ -102,6 +117,7 @@
         </div>
       </section>
     </header>
+    <!-- The Main Section-->
     <main role="main">
       <section id="innerpage-content">
         <div class="container">
@@ -110,8 +126,14 @@
               <h3 class="main-title-alt">Product Feedback</h3>
               <div class="buttons-container">
                 <div class="buttons-row">
-                  <a href="#"><button class="btn-outline">SEE CODE</button> </a>
-                  <a href="#"
+                  <a
+                    href="https://github.com/nicktesh/Product-Feedback.git"
+                    target="_blank"
+                    ><button class="btn-outline">SEE CODE</button>
+                  </a>
+                  <a
+                    href="https://nicktesh.github.io/Product-Feedback"
+                    target="_blank"
                     ><button class="btn-primary dark-blue">VIEW DEMO</button>
                   </a>
                 </div>
@@ -124,12 +146,46 @@
               <div class="project-desc">
                 <p>
                   The purpose of this page is to allow users to leave feedback
-                  suggestions in regards to a web app.
+                  suggestions in regards to a web app. The current functionality
+                  allows the user to sort through multiple categories and to
+                  add/delete a suggestion - which also stores to the users Local
+                  Storage.
                 </p>
               </div>
             </div>
+            <div class="col-lg-12">
+              <div class="full-view">
+                <img src="img/full-view.jpg" alt="Full Desktop View">
+            </div>
           </div>
         </div>
+      </section>
+      <!-- Mobile Section-->
+      <section id="mobile-section">
+        <div class="container-fluid" id="tablet-container">
+          <div class="row">
+          <div class="col-lg-12">
+            <img src="img/tablet-view.png" alt="Tablet View">
+          </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="phone-container">
+          <div class="row">
+          <div class="col-lg-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mobile-content">
+                    <h3 class="main-title left">FULLY <br />RESPONSIVE</h3>
+                    <img src="img/phone-view.png" alt="Mobile View">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="before-footer"></div>
       </section>
       <!-- Contact Section-->
       <a name="contact"></a>
@@ -201,7 +257,6 @@
     <!-- Core theme JS-->
     <script src="../../js/scripts.js"></script>
     <script src="../../js/internal.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
       window.ga = function () {
         ga.q.push(arguments);
