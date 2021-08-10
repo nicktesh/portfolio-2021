@@ -759,18 +759,6 @@ p {
     padding-bottom: 50px;
   }
 
-  .type {
-    border: 1px solid #04befe;
-    background-color: rgba(98, 160, 209, 0.2);
-    color: $white;
-    border-radius: 1000px;
-    padding: 5px;
-    margin: 3px;
-    font-size: 0.8em;
-    line-height: 2.5em;
-    transition: ease 0.3s;
-  }
-
   .portfolio-item {
     display: flex;
     align-items: flex-end;
@@ -780,6 +768,10 @@ p {
     transition: ease 0.3s;
     position: relative;
     z-index: 5;
+
+    @media screen and (max-width: 992px) {
+      padding: 20px;
+    }
 
     &:hover {
       -webkit-box-shadow: inset 5px 5px 40px rgba(0, 0, 0, 0.8);
@@ -797,6 +789,27 @@ p {
 
     &:hover .type {
       text-shadow: $text-shadow;
+    }
+
+    .type-box {
+      display: flex;
+      flex-wrap: wrap;
+
+      .type {
+        border: 1px solid #04befe;
+        background-color: rgba(98, 160, 209, 0.2);
+        color: $white;
+        border-radius: 20px;
+        margin: 3px;
+        line-height: 1.5em;
+        transition: ease 0.3s;
+
+        p {
+          margin: 0;
+          padding: 2px 12px;
+          font-size: 0.8em;
+        }
+      }
     }
   }
   .portfolio-content {
