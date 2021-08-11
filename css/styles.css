@@ -548,7 +548,8 @@ p {
         margin: 3px;
         line-height: 1.5em;
         -webkit-transition: ease 0.3s;
-        transition: ease 0.3s; }
+        transition: ease 0.3s;
+        text-transform: uppercase; }
         #portfolio .portfolio-item .type-box .type p {
           margin: 0;
           padding: 2px 12px;
@@ -565,16 +566,16 @@ p {
     transition: ease 0.3s; }
   #portfolio .project-1 {
     background: #061727;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(6, 23, 39, 0.2)), color-stop(30%, rgba(6, 23, 39, 0.2)), to(rgba(6, 23, 39, 0.2))), -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), url("../projects/product-feedback/img/full-view.jpg");
-    background: linear-gradient(180deg, rgba(6, 23, 39, 0.2) 0, rgba(6, 23, 39, 0.2) 30%, rgba(6, 23, 39, 0.2) 100%), linear-gradient(180deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), url("../projects/product-feedback/img/full-view.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(244, 93, 133, 0.1)), color-stop(30%, rgba(244, 93, 133, 0.1)), to(rgba(244, 93, 133, 0.1))), -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), url("../projects/product-feedback/img/full-view.jpg");
+    background: linear-gradient(180deg, rgba(244, 93, 133, 0.1) 0, rgba(244, 93, 133, 0.1) 30%, rgba(244, 93, 133, 0.1) 100%), linear-gradient(180deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), url("../projects/product-feedback/img/full-view.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover; }
   #portfolio .project-2 {
     background: #061727;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(6, 23, 39, 0.2)), color-stop(30%, rgba(6, 23, 39, 0.2)), to(rgba(6, 23, 39, 0.2))), -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), url("../assets/img/about-container-bg.svg");
-    background: linear-gradient(180deg, rgba(6, 23, 39, 0.2) 0, rgba(6, 23, 39, 0.2) 30%, rgba(6, 23, 39, 0.2) 100%), linear-gradient(180deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), url("../assets/img/about-container-bg.svg");
-    background-position: center;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 179, 0, 0.1)), color-stop(30%, rgba(0, 179, 0, 0.1)), to(rgba(0, 179, 0, 0.1))), -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), url("../projects/next-level-admin/img/full-view.jpg");
+    background: linear-gradient(180deg, rgba(0, 179, 0, 0.1) 0, rgba(0, 179, 0, 0.1) 30%, rgba(0, 179, 0, 0.1) 100%), linear-gradient(180deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), url("../projects/next-level-admin/img/full-view.jpg");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover; }
   #portfolio .project-3 {
@@ -759,13 +760,21 @@ p {
 
 #innerpage-header {
   text-align: center;
-  padding: 20px 0;
-  background: #061727;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), url("../assets/img/inner-header-bg.svg");
-  background: linear-gradient(0deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), url("../assets/img/inner-header-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  padding: 20px 0; }
+  #innerpage-header.green {
+    background: #061727;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 179, 0, 0)), to(rgba(0, 179, 0, 0.6))), url("../assets/img/inner-header-bg.svg");
+    background: linear-gradient(0deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), linear-gradient(-180deg, rgba(0, 179, 0, 0) 0, rgba(0, 179, 0, 0.6) 100%), url("../assets/img/inner-header-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #innerpage-header.pink {
+    background: #061727;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(244, 93, 133, 0)), to(rgba(244, 93, 133, 0.6))), url("../assets/img/inner-header-bg.svg");
+    background: linear-gradient(0deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), linear-gradient(-180deg, rgba(244, 93, 133, 0) 0, rgba(244, 93, 133, 0.6) 100%), url("../assets/img/inner-header-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   #innerpage-header .nav-logo {
     width: 100%;
     max-width: 120px; }
@@ -871,16 +880,22 @@ p {
     padding: 0 10px;
     margin-top: 40px; }
 
-#mobile-section #tablet-container {
-  position: relative;
-  z-index: 6;
-  height: 750px;
+#mobile-section .pink {
   background: #061727;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), url("../assets/img/tablet-bg.svg");
-  background: linear-gradient(0deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), url("../assets/img/tablet-bg.svg");
+  background: linear-gradient(0deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), linear-gradient(45deg, rgba(244, 93, 133, 0.8) 0, rgba(82, 1, 124, 0.8) 100%), url("../assets/img/stars-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+#mobile-section .green {
+  background: #061727;
+  background: linear-gradient(0deg, rgba(6, 23, 39, 0) 0, rgba(6, 23, 39, 0.3) 30%, #061727 100%), linear-gradient(45deg, rgba(0, 179, 0, 0.8) 0, rgba(82, 1, 124, 0.8) 100%), url("../assets/img/stars-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+#mobile-section #tablet-container {
+  position: relative;
+  z-index: 6;
+  height: 750px; }
   @media screen and (max-width: 768px) {
     #mobile-section #tablet-container {
       height: 600px; } }

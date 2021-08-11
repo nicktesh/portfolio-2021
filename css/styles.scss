@@ -814,6 +814,7 @@ p {
         margin: 3px;
         line-height: 1.5em;
         transition: ease 0.3s;
+        text-transform: uppercase;
 
         p {
           margin: 0;
@@ -842,9 +843,9 @@ p {
     background: $dark-bg;
     background: linear-gradient(
         180deg,
-        rgba(6, 23, 39, 0.2) 0,
-        rgba(6, 23, 39, 0.2) 30%,
-        rgba(6, 23, 39, 0.2) 100%
+        rgba(244, 93, 133, 0.1) 0,
+        rgba(244, 93, 133, 0.1) 30%,
+        rgba(244, 93, 133, 0.1) 100%
       ),
       linear-gradient(
         180deg,
@@ -862,9 +863,9 @@ p {
     background: $dark-bg;
     background: linear-gradient(
         180deg,
-        rgba(6, 23, 39, 0.2) 0,
-        rgba(6, 23, 39, 0.2) 30%,
-        rgba(6, 23, 39, 0.2) 100%
+        rgba(0, 179, 0, 0.1) 0,
+        rgba(0, 179, 0, 0.1) 30%,
+        rgba(0, 179, 0, 0.1) 100%
       ),
       linear-gradient(
         180deg,
@@ -872,8 +873,8 @@ p {
         rgba(6, 23, 39, 0.3) 30%,
         rgba(6, 23, 39, 1) 100%
       ),
-      url("../assets/img/about-container-bg.svg");
-    background-position: center;
+      url("../projects/next-level-admin/img/full-view.jpg");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1696,17 +1697,40 @@ p {
 #innerpage-header {
   text-align: center;
   padding: 20px 0;
-  background: $dark-bg;
-  background: linear-gradient(
-      0deg,
-      rgba(6, 23, 39, 0) 0,
-      rgba(6, 23, 39, 0.3) 30%,
-      rgba(6, 23, 39, 1) 100%
-    ),
-    url("../assets/img/inner-header-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  &.green {
+    background: $dark-bg;
+    background: linear-gradient(
+        0deg,
+        rgba(6, 23, 39, 0) 0,
+        rgba(6, 23, 39, 0.3) 30%,
+        rgba(6, 23, 39, 1) 100%
+      ),
+      linear-gradient(-180deg, rgba(0, 179, 0, 0) 0, rgba(0, 179, 0, 0.6) 100%),
+      url("../assets/img/inner-header-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &.pink {
+    background: $dark-bg;
+    background: linear-gradient(
+        0deg,
+        rgba(6, 23, 39, 0) 0,
+        rgba(6, 23, 39, 0.3) 30%,
+        rgba(6, 23, 39, 1) 100%
+      ),
+      linear-gradient(
+        -180deg,
+        rgba(244, 93, 133, 0) 0,
+        rgba(244, 93, 133, 0.6) 100%
+      ),
+      url("../assets/img/inner-header-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   .nav-logo {
     width: 100%;
@@ -1843,10 +1867,7 @@ p {
 }
 
 #mobile-section {
-  #tablet-container {
-    position: relative;
-    z-index: 6;
-    height: 750px;
+  .pink {
     background: $dark-bg;
     background: linear-gradient(
         0deg,
@@ -1854,10 +1875,36 @@ p {
         rgba(6, 23, 39, 0.3) 30%,
         rgba(6, 23, 39, 1) 100%
       ),
-      url("../assets/img/tablet-bg.svg");
+      linear-gradient(
+        45deg,
+        rgba(244, 93, 133, 0.8) 0,
+        rgba(82, 1, 124, 0.8) 100%
+      ),
+      url("../assets/img/stars-bg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .green {
+    background: $dark-bg;
+    background: linear-gradient(
+        0deg,
+        rgba(6, 23, 39, 0) 0,
+        rgba(6, 23, 39, 0.3) 30%,
+        rgba(6, 23, 39, 1) 100%
+      ),
+      linear-gradient(45deg, rgba(0, 179, 0, 0.8) 0, rgba(82, 1, 124, 0.8) 100%),
+      url("../assets/img/stars-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #tablet-container {
+    position: relative;
+    z-index: 6;
+    height: 750px;
 
     @media screen and (max-width: 768px) {
       height: 600px;
