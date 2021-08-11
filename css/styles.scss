@@ -1845,7 +1845,7 @@ p {
 #mobile-section {
   #tablet-container {
     position: relative;
-    z-index: 4;
+    z-index: 6;
     height: 750px;
     background: $dark-bg;
     background: linear-gradient(
@@ -1869,71 +1869,26 @@ p {
 
     img {
       width: 100%;
-      max-width: 600px;
+      max-width: 700px;
       margin-top: 10px;
       position: absolute;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
       padding: 0 50px;
-      z-index: 5;
+      z-index: 6;
       left: 0;
       right: 0;
-      bottom: -80px;
+      bottom: -35px;
 
       @media screen and (max-width: 768px) {
-        max-width: 500px;
-        bottom: -40px;
+        max-width: 550px;
+        bottom: -30px;
       }
 
       @media screen and (max-width: 500px) {
-        max-width: 350px;
+        max-width: 380px;
       }
-    }
-  }
-
-  #phone-container {
-    background-color: $dark-bg;
-    padding: 150px 0 0 0;
-
-    .mobile-content {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      align-items: center;
-
-      img {
-        width: 100%;
-        max-width: 400px;
-
-        @media screen and (max-width: 992px) {
-          max-width: 300px;
-          margin-top: 30px;
-        }
-      }
-    }
-  }
-
-  #before-footer {
-    height: 550px;
-    background: $dark-bg;
-    background: linear-gradient(
-        0deg,
-        rgba(98, 160, 209, 0.2) 0,
-        rgba(98, 160, 209, 0.2) 50%,
-        rgba(98, 160, 209, 0.2) 100%
-      ),
-      url("../projects/product-feedback/img/laptop-view.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media screen and (max-width: 768px) {
-      height: 280px;
-    }
-
-    @media screen and (max-width: 500px) {
-      height: 250px;
     }
   }
 }

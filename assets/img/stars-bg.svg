@@ -3,22 +3,21 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 4209.6 2699" style="enable-background:new 0 0 4209.6 2699;" xml:space="preserve">
 <style type="text/css">
-	.st0{clip-path:url(#SVGID_00000047755110638957461710000006483517204874569106_);fill:#081E35;}
-	.st1{opacity:0.35;clip-path:url(#SVGID_00000047755110638957461710000006483517204874569106_);}
+	.st0{clip-path:url(#SVGID_00000139252050134509827970000002607366671521663899_);fill:#081E35;}
+	.st1{opacity:0.35;clip-path:url(#SVGID_00000139252050134509827970000002607366671521663899_);}
 	.st2{fill:#FFFFFF;}
-	.st3{clip-path:url(#SVGID_00000047755110638957461710000006483517204874569106_);}
-	.st4{opacity:0.95;fill:url(#SVGID_00000043416563029489640570000010811520287789254296_);}
+	.st3{clip-path:url(#SVGID_00000139252050134509827970000002607366671521663899_);}
 </style>
 <g>
 	<defs>
-		<rect id="SVGID_1_" width="4209.6" height="2699"/>
+		<rect id="SVGID_1_" y="0" width="4209.6" height="2699"/>
 	</defs>
-	<clipPath id="SVGID_00000076562854236511282080000010254210293532538507_">
+	<clipPath id="SVGID_00000083811508170773467360000013143350137678778283_">
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
 	
-		<rect style="clip-path:url(#SVGID_00000076562854236511282080000010254210293532538507_);fill:#081E35;" width="4209.6" height="2699"/>
-	<g style="opacity:0.35;clip-path:url(#SVGID_00000076562854236511282080000010254210293532538507_);">
+		<rect y="0" style="clip-path:url(#SVGID_00000083811508170773467360000013143350137678778283_);fill:#081E35;" width="4209.6" height="2699"/>
+	<g style="opacity:0.35;clip-path:url(#SVGID_00000083811508170773467360000013143350137678778283_);">
 		<g>
 			<circle class="st2" cx="3414.7" cy="187.4" r="5.8"/>
 			<circle class="st2" cx="3103.8" cy="230.6" r="7.7"/>
@@ -1700,7 +1699,7 @@
 			<circle class="st2" cx="3229.5" cy="556.8" r="1.6"/>
 		</g>
 	</g>
-	<g style="clip-path:url(#SVGID_00000076562854236511282080000010254210293532538507_);">
+	<g style="clip-path:url(#SVGID_00000083811508170773467360000013143350137678778283_);">
 		<g>
 			<circle class="st2" cx="3518.5" cy="521.8" r="5"/>
 			<circle class="st2" cx="3249.3" cy="559.1" r="6.6"/>
@@ -3383,13 +3382,4 @@
 		</g>
 	</g>
 </g>
-<linearGradient id="SVGID_00000183206861126259203610000013646724010712064681_" gradientUnits="userSpaceOnUse" x1="377.6499" y1="3077.6499" x2="3831.9502" y2="-376.6499" gradientTransform="matrix(1 0 0 -1 0 2700)">
-	<stop  offset="3.273580e-02" style="stop-color:#F45D85"/>
-	<stop  offset="0.1427" style="stop-color:#EB5589;stop-opacity:0.9"/>
-	<stop  offset="0.3239" style="stop-color:#D24092;stop-opacity:0.9"/>
-	<stop  offset="0.4185" style="stop-color:#C23298;stop-opacity:0.9"/>
-	<stop  offset="0.8073" style="stop-color:#741084;stop-opacity:0.9"/>
-	<stop  offset="1" style="stop-color:#52017C"/>
-</linearGradient>
-<rect style="opacity:0.95;fill:url(#SVGID_00000183206861126259203610000013646724010712064681_);" width="4209.6" height="2699"/>
 </svg>

@@ -873,7 +873,7 @@ p {
 
 #mobile-section #tablet-container {
   position: relative;
-  z-index: 4;
+  z-index: 6;
   height: 750px;
   background: #061727;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(6, 23, 39, 0)), color-stop(30%, rgba(6, 23, 39, 0.3)), to(#061727)), url("../assets/img/tablet-bg.svg");
@@ -889,59 +889,23 @@ p {
       height: 350px; } }
   #mobile-section #tablet-container img {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin-top: 10px;
     position: absolute;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding: 0 50px;
-    z-index: 5;
+    z-index: 6;
     left: 0;
     right: 0;
-    bottom: -80px; }
+    bottom: -35px; }
     @media screen and (max-width: 768px) {
       #mobile-section #tablet-container img {
-        max-width: 500px;
-        bottom: -40px; } }
+        max-width: 550px;
+        bottom: -30px; } }
     @media screen and (max-width: 500px) {
       #mobile-section #tablet-container img {
-        max-width: 350px; } }
-#mobile-section #phone-container {
-  background-color: #061727;
-  padding: 150px 0 0 0; }
-  #mobile-section #phone-container .mobile-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    #mobile-section #phone-container .mobile-content img {
-      width: 100%;
-      max-width: 400px; }
-      @media screen and (max-width: 992px) {
-        #mobile-section #phone-container .mobile-content img {
-          max-width: 300px;
-          margin-top: 30px; } }
-#mobile-section #before-footer {
-  height: 550px;
-  background: #061727;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(98, 160, 209, 0.2)), color-stop(50%, rgba(98, 160, 209, 0.2)), to(rgba(98, 160, 209, 0.2))), url("../projects/product-feedback/img/laptop-view.jpg");
-  background: linear-gradient(0deg, rgba(98, 160, 209, 0.2) 0, rgba(98, 160, 209, 0.2) 50%, rgba(98, 160, 209, 0.2) 100%), url("../projects/product-feedback/img/laptop-view.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  @media screen and (max-width: 768px) {
-    #mobile-section #before-footer {
-      height: 280px; } }
-  @media screen and (max-width: 500px) {
-    #mobile-section #before-footer {
-      height: 250px; } }
+        max-width: 380px; } }
 
 /*# sourceMappingURL=styles.css.map */
