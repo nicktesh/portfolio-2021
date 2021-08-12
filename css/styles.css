@@ -776,8 +776,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover; }
   #innerpage-header .nav-logo {
-    width: 100%;
-    max-width: 120px; }
+    width: 120px;
+    max-width: 100%; }
   #innerpage-header .header-content {
     padding: 120px 0;
     height: 400px;
