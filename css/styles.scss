@@ -2014,11 +2014,11 @@ p {
     img {
       max-width: 100%;
       width: 800px;
-      animation: float 6s ease-in-out infinite;
+      animation: float-bob 6s ease-in-out infinite;
     }
   }
 
-  @keyframes float {
+  @keyframes float-bob {
     0% {
       transform: translatey(0px);
     }

@@ -994,9 +994,19 @@ p {
     #error-section #art-box img {
       max-width: 100%;
       width: 800px;
-      -webkit-animation: float 6s ease-in-out infinite;
-              animation: float 6s ease-in-out infinite; }
-@keyframes float {
+      -webkit-animation: float-bob 6s ease-in-out infinite;
+              animation: float-bob 6s ease-in-out infinite; }
+@-webkit-keyframes float-bob {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px); }
+  50% {
+    -webkit-transform: translatey(-50px);
+            transform: translatey(-50px); }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px); } }
+@keyframes float-bob {
   0% {
     -webkit-transform: translatey(0px);
             transform: translatey(0px); }
