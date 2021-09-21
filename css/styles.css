@@ -501,7 +501,7 @@ p {
   /* Backgrounds for Portfolio Items */ }
   @media screen and (max-width: 992px) {
     #portfolio {
-      padding: 40px 0; } }
+      padding: 40px 0 0 0; } }
   #portfolio .row {
     padding-right: 0 !important;
     padding-left: 0 !important; }
@@ -513,6 +513,16 @@ p {
     text-decoration: none; }
   #portfolio .sub-title {
     padding-bottom: 50px; }
+  #portfolio .project-notice {
+    text-align: center;
+    margin: 25px 0; }
+    #portfolio .project-notice p {
+      font-style: italic;
+      text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.7), 0px -2px 15px rgba(255, 255, 255, 0.8); }
+    #portfolio .project-notice a {
+      color: #ffffff;
+      font-weight: 700;
+      text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.7), 0px -2px 15px rgba(255, 255, 255, 0.8); }
   #portfolio .portfolio-item {
     display: -webkit-box;
     display: -ms-flexbox;

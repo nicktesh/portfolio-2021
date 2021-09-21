@@ -752,7 +752,7 @@ p {
   padding: 100px 0 0 0;
 
   @media screen and (max-width: 992px) {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
 
   .row {
@@ -772,6 +772,22 @@ p {
 
   .sub-title {
     padding-bottom: 50px;
+  }
+
+  .project-notice {
+    text-align: center;
+    margin: 25px 0;
+
+    p {
+      font-style: italic;
+      text-shadow: $text-shadow;
+    }
+
+    a {
+      color: $white;
+      font-weight: 700;
+      text-shadow: $text-shadow;
+    }
   }
 
   .portfolio-item {
