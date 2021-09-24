@@ -903,9 +903,9 @@ p {
     background: $dark-bg;
     background: linear-gradient(
         180deg,
-        rgba(6, 23, 39, 0.2) 0,
-        rgba(6, 23, 39, 0.2) 30%,
-        rgba(6, 23, 39, 0.2) 100%
+        rgba(218, 100, 22, 0.2) 0,
+        rgba(218, 100, 22, 0.2) 30%,
+        rgba(218, 100, 22, 0.2) 100%
       ),
       linear-gradient(
         180deg,
@@ -913,7 +913,7 @@ p {
         rgba(6, 23, 39, 0.3) 30%,
         rgba(6, 23, 39, 1) 100%
       ),
-      url("../assets/img/about-img.svg");
+      url("../projects/course-platform/img/full-view.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1752,6 +1752,25 @@ p {
     background-size: cover;
   }
 
+  &.orange {
+    background: $dark-bg;
+    background: linear-gradient(
+        0deg,
+        rgba(6, 23, 39, 0) 0,
+        rgba(6, 23, 39, 0.3) 30%,
+        rgba(6, 23, 39, 1) 100%
+      ),
+      linear-gradient(
+        -180deg,
+        rgba(244, 93, 133, 0) 0,
+        rgba(218, 100, 22, 0.6) 100%
+      ),
+      url("../assets/img/inner-header-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .nav-logo {
     width: 120px;
     max-width: 100%;
@@ -1915,6 +1934,25 @@ p {
         rgba(6, 23, 39, 1) 100%
       ),
       linear-gradient(45deg, rgba(0, 179, 0, 0.8) 0, rgba(82, 1, 124, 0.8) 100%),
+      url("../assets/img/stars-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .orange {
+    background: $dark-bg;
+    background: linear-gradient(
+        0deg,
+        rgba(6, 23, 39, 0) 0,
+        rgba(6, 23, 39, 0.3) 30%,
+        rgba(6, 23, 39, 1) 100%
+      ),
+      linear-gradient(
+        45deg,
+        rgba(218, 100, 22, 0.6) 0,
+        rgba(82, 1, 124, 0.8) 100%
+      ),
       url("../assets/img/stars-bg.svg");
     background-position: center;
     background-repeat: no-repeat;
