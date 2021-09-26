@@ -710,6 +710,7 @@ p {
 #stars {
   width: 1px;
   height: 1px;
+  border-radius: 50%;
   opacity: 0.5;
   background: transparent;
   position: relative;
@@ -732,6 +733,7 @@ p {
 #stars2 {
   width: 2px;
   height: 2px;
+  border-radius: 50%;
   opacity: 0.5;
   background: transparent;
   position: relative;
@@ -754,6 +756,7 @@ p {
 #stars3 {
   width: 3px;
   height: 3px;
+  border-radius: 50%;
   opacity: 0.5;
   background: transparent;
   position: relative;
